@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/edit.css">
+</head>
+<body>
+    <div class="post">
+
+        <form action="/user/<%= data.id %>?_method=PUT " method="post">
+            <label for="username">New Username</label><input type="text" name="username" id="" value="<%= data.username %>">
+            <label for="password">New Password</label><input type="password" name="password" id="">
+            <label for="user_pic">New Profile Picture</label><input type="text" name="user_pic" id="" value="<%= data.user_pic %>">
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</body>
+</html>

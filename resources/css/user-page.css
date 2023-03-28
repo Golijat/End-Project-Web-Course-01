@@ -1,0 +1,49 @@
+/* body{
+    background: rgb(4,223,154);
+    background: linear-gradient(90deg, rgba(4,223,154,1) 11%, rgba(15,218,128,1) 48%, rgba(0,255,222,1) 100%);
+} */
+
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+}
+.text h2{
+    text-align: center;
+}
+.text button{
+    height: 40px;
+    width: 70px;
+}
+
+.img{
+    
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    background-color: aqua;
+}
+.img img{
+    width: 100%;
+}
+
+.img_box{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border-radius: 20%;
+}
+.img_box_box{
+    display: flex;
+    justify-content: center;
+}

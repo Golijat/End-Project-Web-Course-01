@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather For You</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script type="module" src="/js/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.5MfPN3IgROtK6kLwBhIj-wHaEG%26pid%3DApi&f=1&ipt=3e97b47a089ae6c7818591e5cacf2527c5c454cf8ac6946836ed372815063e47&ipo=images" alt="">
+            </div>
+            <div class="user">
+                <a href="/user-home"><h3>Show All Users</h3></a>
+            </div>
+            <div class="search_bar">
+                <form action="/weather/ " method="get" class="searchButton">
+                    <input type="text" name="city_name" placeholder="City Name" id="searchInput">
+                    <input type="submit" value="Search" >
+                </form>
+            </div>
+            <!-- <div class="profile">
+                <img src="" alt="Profile Picture">
+            </div> -->
+        </div>
+    </header>
+
+    <div class="weather_list">
+        <div class="weather_list_top_text">
+            <h3 class="city_name">City</h3>
+            <h3 class="current">Current</h3>
+            <h3 class="next_six_hours">Next Six Hours</h3>
+        </div>
+
+        <div class="city_list">
+            <div class="city1 City">
+                <a href="/weather/<%= "Arvika" %> "><h3 class="name">Arvika</h3></a>
+                <div class="current_weather">
+                    <h3 class="current_temp">-10</h3>
+                    <h3 class="current_symbol_code">snowy</h3>
+                </div>
+                <div class="next_six_hours_weather">
+                    <h3 class="next_six_hours_temp">-15</h3>
+                    <h3 class="next_six_hours_symbol_code">snowy</h3>
+                </div>
+            </div>
+            
+            <div class="city2 City">
+                <a href="/weather/<%= "Karlstad" %> "><h3 class="name">Karlstad</h3></a>
+                <div class="current_weather">
+                    <h3 class="current_temp">-30</h3>
+                    <h3 class="current_symbol_code">freezeing</h3>
+                </div>
+                <div class="next_six_hours_weather">
+                    <h3 class="next_six_hours_temp">-60</h3>
+                    <h3 class="next_six_hours_symbol_code">deadly</h3>
+                </div>
+            </div>
+            
+            <div class="city3 City">
+                <a href="/weather/<%= "Kil" %> "><h3 class="name">City 3</h3></a>
+                <div class="current_weather">
+                    <h3 class="current_temp">10</h3>
+                    <h3 class="current_symbol_code">snowy</h3>
+                </div>
+                <div class="next_six_hours_weather">
+                    <h3 class="next_six_hours_temp">20</h3>
+                    <h3 class="next_six_hours_symbol_code">sunny</h3>
+                </div>
+            </div>
+            
+            <div class="city4 City">
+                <a href="/weather/<%= "Kil" %> "><h3 class="name">City 4</h3></a>
+                <div class="current_weather">
+                    <h3 class="current_temp">+20</h3>
+                    <h3 class="current_symbol_code">sunny</h3>
+                </div>
+                <div class="next_six_hours_weather">
+                    <h3 class="next_six_hours_temp">15</h3>
+                    <h3 class="next_six_hours_symbol_code">cloudy</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

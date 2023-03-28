@@ -1,0 +1,66 @@
+body{
+    background-color: rgb(191, 216, 239);
+    margin: 0;
+}
+
+.user-box{
+    display: flex;
+    justify-content: center;
+}
+.users{
+    background-color: rgb(109, 173, 177);
+    display: inline-block;
+    border-radius: 10%;
+    text-align: center;
+    width: 200px;
+}
+.users a{
+    text-decoration: none;
+    color: rgb(156, 5, 186);
+    font-size: 1.3rem;
+    
+}
+
+
+.topbar{
+    background-color: rgb(179, 168, 222);
+    margin-bottom: 20px;
+    /* height: 70px; */
+}
+
+.links{
+    display: flex;
+    /* flex-direction: column; */
+    /* margin-left: 20px; */
+    /* align-items: end; */
+    justify-content: center;
+}
+.links a{
+    display: flex;
+    /* margin-top: 5px; */
+    text-decoration: none;
+    margin-right: 40px;
+    margin-left: 25px;
+    align-items: center;
+}
+.links a h2{
+    color: rgb(156, 5, 186);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+}
+
+@media screen and (max-width: 360px){
+    .users{
+        width: 250px;
+    }
+    .users a{
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/user-home.css">
+    <% if(locals.user){ %> 
+        <script>
+            let theme = "<%= user.hex_color %>"
+        </script>
+    <% } %> 
+</head>
+<body>
+    <div class="topbar">
+        <div class="links">
+            <div class="logo">
+                <a href="/"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.5MfPN3IgROtK6kLwBhIj-wHaEG%26pid%3DApi&f=1&ipt=3e97b47a089ae6c7818591e5cacf2527c5c454cf8ac6946836ed372815063e47&ipo=images" alt=""></a>
+            </div>
+                <% if(login){ %> 
+                    <a href="/logout"><h2>Logout</h2></a>
+                <% }else{ %>
+                    <a href="/login"><h2>Login</h2></a>
+                <% } %> 
+            <a href="/new"><h2>New</h2></a>
+        </div>
+    </div>
+
+    <div class="user-box">
+
+        <div class="users">
+            <h1>Users</h1>
+            <% for(n in data){ %>
+                <a href="/user/<%= data[n].id %> ">
+                <div class="card">
+                    <p><%= data[n].username %></p>
+                </div>
+            </a>
+            <% } %>  
+        </div>
+    </div>
+</body>
+</html>

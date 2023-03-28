@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="/js/show.js" defer></script>
+    <script>city_name = "<%= data %>"</script>
+    <link rel="stylesheet" href="/css/show.css">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="/"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.5MfPN3IgROtK6kLwBhIj-wHaEG%26pid%3DApi&f=1&ipt=3e97b47a089ae6c7818591e5cacf2527c5c454cf8ac6946836ed372815063e47&ipo=images" alt=""></a>
+            </div>
+            <div class="search_bar">
+                <form action="/weather/ " method="get" class="searchButton">
+                    <input type="text" name="city_name" placeholder="City Name" id="searchInput">
+                    <input type="submit" value="Search" >
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="weather">
+        <div class="weather_list">
+            <h1 class="city_name"><%= data %></h1>
+            <div class="weather_list_top_text">
+                <h2 class="current">Current</h2>
+                <h2 class="next_six_hours">Next Six Hours</h2>
+            </div>
+        </div>
+        <div class="City">
+            <div class="current_weather">
+                <h2 class="current_temp alignement">-10</h2>
+                <h2 class="current_symbol_code alignement">snowy</h2>
+            </div>
+            <div class="next_six_hours_weather">
+                <h2 class="next_six_hours_temp alignement">-15</h2>
+                <h2 class="next_six_hours_symbol_code alignement">snowy</h2>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
